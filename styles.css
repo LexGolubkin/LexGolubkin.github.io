@@ -6,11 +6,13 @@ body {
 }
 
 img {
-  width: 80%;
-  height: 100px;
+  width: 50%;
+  height: 150px;
 }
 
 #doing {
-    height: 250px;
-    background-color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    color: var(--tg-theme-button-text-color);
+    background-color: var(--tg-theme-button-color);
 }
