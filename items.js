@@ -13,9 +13,9 @@ products.forEach(product => {
 
     // Заполняем блок данными
     productDiv.innerHTML = `
-        <img src="https://avatars.githubusercontent.com/u/51032358?v=4">
-        <h3>${product.name}</h3>
-        <p>Цена: ${product.price} руб.</p>
+        <img src="https://avatars.githubusercontent.com/u/51032358?v=4" class="logo">
+        <h3 class="ProductName">${product.name}</h3>
+        <p class="Price">Цена: ${product.price} руб.</p>
     `;
 
     // Добавляем блок в контейнер
