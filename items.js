@@ -5,7 +5,7 @@ const = [
     { id: 4, name: 'Product 4', price: 200 },
 ]
 
-const productsContainer = document.getElementById('main');
+const productsContainer = document.getElementById('products_list');
 
 products.forEach(product => {
     const productDiv = document.createElement('div');
