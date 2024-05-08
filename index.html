@@ -9,6 +9,7 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
+<body>
     <div id="main">
         <h1>Тестовое веб приложение для ТГ</h1>
         <img src="https://avatars.githubusercontent.com/u/51032358?v=4">
@@ -16,7 +17,29 @@
             проработать верстку приложения с учетом того, что нету кнопки назад, возможно нужно будет сделать
             это как приложение</p>
         <button id="doing">Действие</button>
+        <button id="close">Закрыть</button>
     </div>
-<body>
+    <form id="form">
+        <input type="text" placeholder="Имя" id="user_name">
+        <input type="text" placeholder="Email" id="email">
+        <input type="text" placeholder="Телефон" id="phone">
+        <button id="order">Оформить</button>
+    </form>
+    <script>
+        let tg = window.Telegram.WebApp;
+        leg doing = document.getElementById("doing");
+        let order = document.getElementById("order");
+
+        doing.addEventListener("click", () => {
+            document.getElementById("main").style.display = "none";
+            document.getElementById("form").style.display = "block";
+            document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " "
+                                                        + tg.initDataUnsafe.user.last_name;
+        });
+
+        close.addEventListener("click", () => {
+            tg.close();
+        });
+    </script>
 </body>
 </html>

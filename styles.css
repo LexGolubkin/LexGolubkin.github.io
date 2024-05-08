@@ -17,9 +17,18 @@ button {
     background: var(--tg-theme-button-color);
 }
 
+button:hover {
+    background: var(--tg-theme-secondary-bg-color)
+}
+
 img {
   width: 50%;
   height: 150px;
+}
+
+form {
+    display: none;
+    text-align: center;
 }
 
 #doing {
