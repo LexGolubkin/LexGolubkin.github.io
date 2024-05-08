@@ -25,6 +25,6 @@ async def start_command_processing(message: Message):
     await message.answer(text='Выберите действие', reply_markup=markup)
 
 
-@shop.message(F.WEB_APP_DATA)
+@shop.message(F.web_app_data)
 async def web_app_data_processing(message: Message):
     await message.answer(message.web_app_data.data)

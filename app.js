@@ -1,7 +1,13 @@
 let tg = window.Telegram.WebApp;
+
+let name = "";
+let email = "";
+let phone = "";
+
 let doing = document.getElementById("doing");
 let order = document.getElementById("order");
 let close = document.getElementById("close");
+
 tg.expand();
 
 doing.addEventListener("click", () => {
@@ -12,9 +18,9 @@ doing.addEventListener("click", () => {
 });
 
 close.addEventListener("click", () => {
-    let name = document.getElementById("user_name").value;
-    let email = document.getElementById("user_email").value;
-    let phone = document.getElementById("user_phone").value;
+    name = document.getElementById("user_name").value;
+    email = document.getElementById("user_email").value;
+    phone = document.getElementById("user_phone").value;
 
     let data = {
         name: name,
