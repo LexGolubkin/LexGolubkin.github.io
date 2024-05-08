@@ -33,6 +33,7 @@ form {
 
 .product {
     display: inline-block;
+    width: 50%;
 }
 
 #doing {
