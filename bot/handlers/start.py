@@ -23,3 +23,8 @@ async def start_command_processing(message: Message):
     # markup = InlineKeyboardMarkup(inline_keyboard=[])
     # markup.add(InlineKeyboardButton(text=to_shop, web_app=WebAppInfo(url=INDEX_HTML_PATH)))
     await message.answer(text='Выберите действие', reply_markup=markup)
+
+
+@shop.message(content_types=['web_app_data'])
+async def web_app_data_processing(message: Message):
+    await message.answer(message.web_app_data.data)
