@@ -29,6 +29,11 @@ button:hover {
 /*     height: 100px; */
 }
 
+.AddToCart_btn {
+    height: 50px;
+    width: 160px;
+}
+
 img {
   width: 100px;
   height: 100px;
