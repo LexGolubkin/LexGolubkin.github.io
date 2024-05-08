@@ -5,14 +5,23 @@ body {
     background: var(--tg-theme-bg-color);
 }
 
+button {
+    border: 0;
+    border-radius: 5px;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color);
+}
+
 img {
   width: 50%;
   height: 150px;
 }
 
 #doing {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    color: var(--tg-theme-button-text-color);
-    background-color: var(--tg-theme-button-color);
+     margin-top: 50px;
 }
