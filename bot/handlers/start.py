@@ -1,8 +1,8 @@
-from aiogram import Router
+from aiogram import Router, F
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 from aiogram.types.web_app_info import WebAppInfo
 
 from configs.base import INDEX_HTML_PATH
@@ -25,6 +25,6 @@ async def start_command_processing(message: Message):
     await message.answer(text='Выберите действие', reply_markup=markup)
 
 
-@shop.message(content_types=['web_app_data'])
+@shop.message(F.WEB_APP_DATA)
 async def web_app_data_processing(message: Message):
     await message.answer(message.web_app_data.data)
