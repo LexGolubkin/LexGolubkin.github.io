@@ -17,16 +17,22 @@ doing.addEventListener("click", () => {
                                                 + tg.initDataUnsafe.user.last_name;
 });
 
-close.addEventListener("click", () => {
+order.addEventListener("click", () => {
     name = document.getElementById("user_name").value;
     email = document.getElementById("user_email").value;
     phone = document.getElementById("user_phone").value;
 
+    document.getElementById("main").style.display = "block";
+    document.getElementById("form").style.display = "none";
+});
+
+close.addEventListener("click", () => {
     let data = {
         name: name,
         email: email,
         phone: phone
     };
+
     tg.sendData(JSON.stringify(data));
 
     tg.close();
