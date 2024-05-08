@@ -16,7 +16,7 @@ products.forEach(product => {
         <img src="https://avatars.githubusercontent.com/u/51032358?v=4" class="logo">
         <h3 class="ProductName">${product.name}</h3>
         <p class="Price">Цена: ${product.price} руб.</p>
-        <div class="AddToCart"><button>В корзину</button></div>
+        <div class="AddToCart"><button class="AddToCart_btn">В корзину</button></div>
     `;
 
     // Добавляем блок в контейнер
