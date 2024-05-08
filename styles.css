@@ -22,7 +22,7 @@ button:hover {
 }
 
 img {
-  width: 23%;
+  width: 100px;
   height: 100px;
 }
 
@@ -34,6 +34,17 @@ form {
 .product {
     display: inline-block;
     width: 50%;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+.ProductName {
+    text-align: center;
 }
 
 #doing {
