@@ -68,34 +68,3 @@ form {
 #close {
     margin-top: 50px;
 }
-
-.navbar {
-    background-color: var(--tg-theme-secondary-bg-color);
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Стилизуйте ссылки внутри меню */
-.navbar a {
-    float: left;
-    display: block;
-    color: var(--tg-theme-button-text-color);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* Измените цвет ссылок при наведении */
-.navbar a:hover {
-    background-color: var(--tg-theme-destructive-text-color);
-    color: black;
-}
-
-/* Добавьте цвет для активной/текущей ссылки */
-.navbar a.active {
-    background-color: var(--tg-theme-accent-text-color);
-    color: white;
-}
