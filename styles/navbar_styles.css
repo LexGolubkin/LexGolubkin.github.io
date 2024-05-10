@@ -1,6 +1,6 @@
 .navbar {
     background-color: var(--tg-theme-secondary-bg-color);
-    left: -2.5px;
+    left: -2px;
     overflow: hidden;
     position: fixed;
     bottom: 0;
