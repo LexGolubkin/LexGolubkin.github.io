@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="styles/navbar_styles.css">
 </head>
 <body>
-    <script>tg.expand();</script>
+    <script>
+    let tg = window.Telegram.WebApp;
+    tg.expand();
+    </script>
     <h1>Тестовое веб приложение для ТГ(Магазин)</h1>
     <div id="products_list"></div>
     <button id="doing">Действие</button>
