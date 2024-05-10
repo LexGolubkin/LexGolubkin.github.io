@@ -1,5 +1,6 @@
 .navbar {
     background-color: var(--tg-theme-secondary-bg-color);
+    padding: -5px;
     overflow: hidden;
     position: fixed;
     bottom: 0;
@@ -21,7 +22,7 @@
 
 /* Измените цвет ссылок при наведении */
 .navbar a:hover {
-    background-color: var(--tg-theme-section-header-text-color);
+    background-color: black;
     color: black;
 }
 
