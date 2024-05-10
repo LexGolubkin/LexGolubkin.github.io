@@ -3,6 +3,9 @@ const products = [
     { id: 2, name: 'Product 2', price: 200 },
     { id: 3, name: 'Product 3', price: 200 },
     { id: 4, name: 'Product 4', price: 200 },
+    { id: 5, name: 'Product 5', price: 200 },
+    { id: 6, name: 'Product 6', price: 200 },
+    { id: 7, name: 'Product 7', price: 200 },
 ]
 
 const productsContainer = document.getElementById('products_list');
