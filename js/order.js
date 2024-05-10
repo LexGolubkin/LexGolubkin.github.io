@@ -8,8 +8,6 @@ let doing = document.getElementById("doing");
 let order = document.getElementById("order");
 let close = document.getElementById("close");
 
-tg.expand();
-
 doing.addEventListener("click", () => {
     document.getElementById("main").style.display = "none";
     document.getElementById("form").style.display = "block";
