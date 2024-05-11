@@ -10,7 +10,7 @@ let close = document.getElementById("close");
 
 tg.expand();
 
-alert("Добро пожаловать в Shop");
+// alert("Добро пожаловать в Shop");
 
 doing.addEventListener("click", () => {
     document.getElementById("main").style.display = "none";
