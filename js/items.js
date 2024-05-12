@@ -8,7 +8,17 @@ const products = [
     { id: 7, name: 'Product 7', price: 200 },
 ]
 
+const btn = document.querySelector("#search_btn");
+
 const productsContainer = document.getElementById('products_list');
+
+btn.addEventListener('click', (e) => {
+  e.preventDefault();
+  let srch = document.getElementById("search_fold").value;
+  console.log(srch);
+
+  document.getElementById("search_p").textContent = srch;
+});
 
 products.forEach(product => {
     const productDiv = document.createElement('div');

@@ -12,6 +12,16 @@
 </head>
 <body>
     <h1>Магазин</h1>
+    <div id="search_div">
+        <form id="search_form" action="" method="get">
+            <input name="s" placeholder="Искать здесь..." type="search" id="search_fold">
+            <button type="submit" id="search_btn">Поиск</button>
+	    </form>
+    </div>
+    <div id="search_res">
+        <p>Текст поиска:</p>
+        <p id="search_p"></p>
+    </div>
     <div id="products_list"></div>
     <div style="margin-bottom:80px;"></div>
     <div class="navbar">
