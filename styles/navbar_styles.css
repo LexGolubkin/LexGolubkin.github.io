@@ -31,6 +31,6 @@
 
 /* Добавьте цвет для активной/текущей ссылки */
 .navbar a.active {
-    background-color: var(--tg-theme-accent-text-color);
+    /*background-color: var(--tg-theme-accent-text-color);*/
     color: white;
 }
