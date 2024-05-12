@@ -39,7 +39,7 @@ img {
   height: 150px;
 }
 
-form {
+#form {
     display: none;
     text-align: center;
 }
