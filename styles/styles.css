@@ -44,8 +44,13 @@ img {
 
 .product {
     margin-top: 30px;
+    margin-left: 5px;
     display: inline-block;
-    width: 50%;
+    width: 150px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: black;
 }
 
 .logo {
